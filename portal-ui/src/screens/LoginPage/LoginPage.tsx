@@ -560,7 +560,7 @@ const Login = ({
                 <div className="left-logo">
                   <LoginMinIOLogo />
                 </div>
-                <div className="text-line1">Welcome to</div>
+                <div className="text-line1">Afranet</div>
                 <div className="text-line2">{consoleText}</div>
               </div>
             </Grid>
