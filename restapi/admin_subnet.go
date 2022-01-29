@@ -23,11 +23,11 @@ import (
 	"fmt"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/cluster"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/subnet"
-	"github.com/minio/console/restapi/operations"
-	"github.com/minio/console/restapi/operations/admin_api"
+	"github.com/foroughfor/console/cluster"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/pkg/subnet"
+	"github.com/foroughfor/console/restapi/operations"
+	"github.com/foroughfor/console/restapi/operations/admin_api"
 	"github.com/minio/madmin-go"
 )
 

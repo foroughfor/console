@@ -21,9 +21,9 @@ import (
 	"time"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	"github.com/minio/console/restapi/operations/admin_api"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/restapi/operations"
+	"github.com/foroughfor/console/restapi/operations/admin_api"
 )
 
 func registerAdminArnsHandlers(api *operations.ConsoleAPI) {

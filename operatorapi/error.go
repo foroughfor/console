@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
+	"github.com/foroughfor/console/models"
 	"github.com/minio/madmin-go"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 )

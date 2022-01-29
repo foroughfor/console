@@ -26,17 +26,17 @@ import (
 
 	"github.com/klauspost/compress/gzhttp"
 
-	"github.com/minio/console/restapi"
+	"github.com/foroughfor/console/restapi"
 	"github.com/unrolled/secure"
 
-	"github.com/minio/console/pkg/auth"
+	"github.com/foroughfor/console/pkg/auth"
 
 	"github.com/go-openapi/swag"
 
 	"github.com/go-openapi/errors"
 
-	"github.com/minio/console/models"
-	"github.com/minio/console/operatorapi/operations"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/operatorapi/operations"
 )
 
 //go:generate swagger generate server --target ../../console --name Operator --spec ../swagger-operator.yml --server-package operatorapi --principal models.Principal --exclude-main

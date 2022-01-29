@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/foroughfor/console/models"
 )
 
 // DirectCSIFormatDriveHandlerFunc turns a function with the right signature into a direct c s i format drive handler

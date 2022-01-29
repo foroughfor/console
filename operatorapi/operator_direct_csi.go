@@ -22,13 +22,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/minio/console/operatorapi/operations/operator_api"
+	"github.com/foroughfor/console/operatorapi/operations/operator_api"
 
-	"github.com/minio/console/cluster"
+	"github.com/foroughfor/console/cluster"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/operatorapi/operations"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/operatorapi/operations"
 	directv1beta1apis "github.com/minio/direct-csi/pkg/apis/direct.csi.min.io/v1beta1"
 	directv1beta1 "github.com/minio/direct-csi/pkg/clientset/typed/direct.csi.min.io/v1beta1"
 	"github.com/minio/direct-csi/pkg/sys"

@@ -30,11 +30,11 @@ import (
 	minioIAMPolicy "github.com/minio/pkg/iam/policy"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/console/pkg/auth/ldap"
-	"github.com/minio/console/restapi/operations"
-	"github.com/minio/console/restapi/operations/user_api"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/pkg/auth/idp/oauth2"
+	"github.com/foroughfor/console/pkg/auth/ldap"
+	"github.com/foroughfor/console/restapi/operations"
+	"github.com/foroughfor/console/restapi/operations/user_api"
 )
 
 func isErasureMode() bool {

@@ -23,9 +23,9 @@ import (
 
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	"github.com/minio/console/restapi/operations/user_api"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/restapi/operations"
+	"github.com/foroughfor/console/restapi/operations/user_api"
 )
 
 func registerAccountHandlers(api *operations.ConsoleAPI) {

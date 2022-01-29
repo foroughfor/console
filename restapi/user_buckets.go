@@ -34,9 +34,9 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	"github.com/minio/console/restapi/operations/user_api"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/restapi/operations"
+	"github.com/foroughfor/console/restapi/operations/user_api"
 	"github.com/minio/minio-go/v7/pkg/policy"
 	"github.com/minio/minio-go/v7/pkg/replication"
 	minioIAMPolicy "github.com/minio/pkg/iam/policy"

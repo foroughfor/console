@@ -3,7 +3,7 @@ GOPATH := $(shell go env GOPATH)
 # Sets the build version based on the output of the following command, if we are building for a tag, that's the build else it uses the current git branch as the build
 BUILD_VERSION:=$(shell git describe --exact-match --tags $(git log -n1 --pretty='%h') 2>/dev/null || git rev-parse --abbrev-ref HEAD 2>/dev/null)
 BUILD_TIME:=$(shell date 2>/dev/null)
-TAG ?= "minio/console:$(BUILD_VERSION)-dev"
+TAG ?= "foroughfor/console:$(BUILD_VERSION)-dev"
 MINIO_VERSION ?= "quay.io/minio/minio:latest"
 
 default: console
@@ -68,7 +68,7 @@ test-integration:
 	@echo "docker run with MinIO Version below:"
 	@echo $(MINIO_VERSION)
 	@(docker run -d --name minio --rm -p 9000:9000 $(MINIO_VERSION) server /data{1...4} && sleep 5)
-	@(GO111MODULE=on go test -race -v github.com/minio/console/integration/...)
+	@(GO111MODULE=on go test -race -v github.com/foroughfor/console/integration/...)
 	@(docker stop minio)
 
 test-permissions:
@@ -90,13 +90,13 @@ cleanup-permissions:
 	@(docker stop minio)
 
 test:
-	@(GO111MODULE=on go test -race -v github.com/minio/console/restapi/...)
+	@(GO111MODULE=on go test -race -v github.com/foroughfor/console/restapi/...)
 
 test-pkg:
-	@(GO111MODULE=on go test -race -v github.com/minio/console/pkg/...)
+	@(GO111MODULE=on go test -race -v github.com/foroughfor/console/pkg/...)
 
 coverage:
-	@(GO111MODULE=on go test -v -coverprofile=coverage.out github.com/minio/console/restapi/... && go tool cover -html=coverage.out && open coverage.html)
+	@(GO111MODULE=on go test -v -coverprofile=coverage.out github.com/foroughfor/console/restapi/... && go tool cover -html=coverage.out && open coverage.html)
 
 clean:
 	@echo "Cleaning up all the generated files"

@@ -24,7 +24,7 @@ import (
 	"time"
 
 	"github.com/minio/cli"
-	"github.com/minio/console/pkg"
+	"github.com/foroughfor/console/pkg"
 	"github.com/minio/pkg/console"
 	"github.com/minio/pkg/trie"
 	"github.com/minio/pkg/words"

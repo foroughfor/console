@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/console/operatorapi/operations/operator_api"
+	"github.com/foroughfor/console/operatorapi/operations/operator_api"
 
-	"github.com/minio/console/models"
+	"github.com/foroughfor/console/models"
 	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

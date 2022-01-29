@@ -42,7 +42,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	"golang.org/x/net/netutil"
 
-	"github.com/minio/console/operatorapi/operations"
+	"github.com/foroughfor/console/operatorapi/operations"
 )
 
 const (

@@ -34,15 +34,15 @@ import (
 
 	"github.com/klauspost/compress/gzhttp"
 
-	portal_ui "github.com/minio/console/portal-ui"
+	portal_ui "github.com/foroughfor/console/portal-ui"
 	"github.com/minio/pkg/env"
 	"github.com/minio/pkg/mimedb"
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
-	"github.com/minio/console/restapi/operations"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/pkg/auth"
+	"github.com/foroughfor/console/restapi/operations"
 	"github.com/unrolled/secure"
 )
 

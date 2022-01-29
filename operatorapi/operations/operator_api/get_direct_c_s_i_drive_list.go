@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/foroughfor/console/models"
 )
 
 // GetDirectCSIDriveListHandlerFunc turns a function with the right signature into a get direct c s i drive list handler

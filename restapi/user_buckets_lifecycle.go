@@ -33,9 +33,9 @@ import (
 	"github.com/minio/minio-go/v7/pkg/lifecycle"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	"github.com/minio/console/restapi/operations/user_api"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/restapi/operations"
+	"github.com/foroughfor/console/restapi/operations/user_api"
 )
 
 func registerBucketsLifecycleHandlers(api *operations.ConsoleAPI) {

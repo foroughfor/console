@@ -20,9 +20,9 @@ import (
 	"fmt"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/operatorapi/operations"
-	"github.com/minio/console/operatorapi/operations/user_api"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/operatorapi/operations"
+	"github.com/foroughfor/console/operatorapi/operations/user_api"
 )
 
 func registerSessionHandlers(api *operations.OperatorAPI) {

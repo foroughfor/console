@@ -19,14 +19,14 @@ package operatorapi
 import (
 	"fmt"
 
-	"github.com/minio/console/restapi"
+	"github.com/foroughfor/console/restapi"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/foroughfor/console/pkg/utils"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/operatorapi/operations"
-	"github.com/minio/console/operatorapi/operations/operator_api"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/operatorapi/operations"
+	"github.com/foroughfor/console/operatorapi/operations/operator_api"
 )
 
 func registerParityHandlers(api *operations.OperatorAPI) {

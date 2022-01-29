@@ -31,7 +31,7 @@ import (
 	"github.com/blang/semver/v4"
 	"github.com/cheggaaa/pb/v3"
 	"github.com/minio/cli"
-	"github.com/minio/console/pkg"
+	"github.com/foroughfor/console/pkg"
 	"github.com/minio/selfupdate"
 )
 
@@ -70,7 +70,7 @@ func getUpdateReaderFromURL(u string, transport http.RoundTripper) (io.ReadClose
 const defaultPubKey = "RWTx5Zr1tiHQLwG9keckT0c45M3AGeHD6IvimQHpyRywVWGbP1aVSGav"
 
 func getLatestRelease(tr http.RoundTripper) (string, error) {
-	releaseURL := "https://api.github.com/repos/minio/console/releases/latest"
+	releaseURL := "https://api.github.com/repos/foroughfor/console/releases/latest"
 
 	body, _, err := getUpdateReaderFromURL(releaseURL, tr)
 	if err != nil {
@@ -118,7 +118,7 @@ func updateInplace(ctx *cli.Context) error {
 		return nil
 	}
 
-	consoleBin := fmt.Sprintf("https://github.com/minio/console/releases/download/%s/console-%s-%s", rel, runtime.GOOS, runtime.GOARCH)
+	consoleBin := fmt.Sprintf("https://github.com/foroughfor/console/releases/download/%s/console-%s-%s", rel, runtime.GOOS, runtime.GOARCH)
 	reader, length, err := getUpdateReaderFromURL(consoleBin, transport)
 	if err != nil {
 		return fmt.Errorf("unable to fetch binary from %s: %w", consoleBin, err)

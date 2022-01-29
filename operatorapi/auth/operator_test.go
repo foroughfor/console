@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/minio/console/cluster"
+	"github.com/foroughfor/console/cluster"
 	operatorClientset "github.com/minio/operator/pkg/client/clientset/versioned"
 )
 

@@ -36,9 +36,9 @@ kubectl apply -f metrics-dev.yaml
 # Whether or not to build the m3 container and load it to kind or just load it
 if [[ $CONSOLE_DOCKER == "true" ]]; then
 	# Build mkube
-  make --directory=".." k8sdev TAG=minio/console:latest
+  make --directory=".." k8sdev TAG=foroughfor/console:latest
 else
-	kind load docker-image minio/console:latest
+	kind load docker-image foroughfor/console:latest
 fi
 
 echo "done"

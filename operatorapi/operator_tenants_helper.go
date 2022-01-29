@@ -26,13 +26,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/minio/console/operatorapi/operations/operator_api"
+	"github.com/foroughfor/console/operatorapi/operations/operator_api"
 
 	"errors"
 
-	"github.com/minio/console/cluster"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/kes"
+	"github.com/foroughfor/console/cluster"
+	"github.com/foroughfor/console/models"
+	"github.com/foroughfor/console/pkg/kes"
 	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
 	"gopkg.in/yaml.v2"
 	corev1 "k8s.io/api/core/v1"

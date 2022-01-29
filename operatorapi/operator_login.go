@@ -25,16 +25,16 @@ import (
 
 	"github.com/minio/minio-go/v7/pkg/credentials"
 
-	"github.com/minio/console/restapi"
+	"github.com/foroughfor/console/restapi"
 
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	opauth "github.com/minio/console/operatorapi/auth"
-	"github.com/minio/console/operatorapi/operations"
-	"github.com/minio/console/operatorapi/operations/user_api"
-	"github.com/minio/console/pkg/auth"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
+	"github.com/foroughfor/console/models"
+	opauth "github.com/foroughfor/console/operatorapi/auth"
+	"github.com/foroughfor/console/operatorapi/operations"
+	"github.com/foroughfor/console/operatorapi/operations/user_api"
+	"github.com/foroughfor/console/pkg/auth"
+	"github.com/foroughfor/console/pkg/auth/idp/oauth2"
 )
 
 func registerLoginHandlers(api *operations.OperatorAPI) {

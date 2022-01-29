@@ -25,7 +25,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/minio/console/cluster"
+	"github.com/foroughfor/console/cluster"
 	"github.com/minio/madmin-go"
 	mc "github.com/minio/mc/cmd"
 	"github.com/minio/pkg/env"

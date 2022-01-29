@@ -25,7 +25,7 @@ import (
 	"time"
 
 	"github.com/minio/cli"
-	"github.com/minio/console/restapi"
+	"github.com/foroughfor/console/restapi"
 )
 
 var appCmds = []cli.Command{

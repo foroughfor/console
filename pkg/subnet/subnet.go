@@ -26,12 +26,12 @@ import (
 
 	"github.com/minio/pkg/licverifier"
 
-	"github.com/minio/console/models"
+	"github.com/foroughfor/console/models"
 	"github.com/minio/madmin-go"
 	mc "github.com/minio/mc/cmd"
 	"github.com/tidwall/gjson"
 
-	"github.com/minio/console/cluster"
+	"github.com/foroughfor/console/cluster"
 )
 
 func LoginWithMFA(client cluster.HTTPClientI, username, mfaToken, otp string) (*LoginResp, error) {

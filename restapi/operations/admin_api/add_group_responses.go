@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/minio/console/models"
+	"github.com/foroughfor/console/models"
 )
 
 // AddGroupCreatedCode is the HTTP code returned for type AddGroupCreated

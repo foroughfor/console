@@ -31,10 +31,10 @@ import (
 	"time"
 
 	"github.com/go-openapi/loads"
-	"github.com/minio/console/restapi"
-	"github.com/minio/console/restapi/operations"
+	"github.com/foroughfor/console/restapi"
+	"github.com/foroughfor/console/restapi/operations"
 
-	"github.com/minio/console/models"
+	"github.com/foroughfor/console/models"
 
 	"github.com/stretchr/testify/assert"
 )

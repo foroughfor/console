@@ -44,7 +44,7 @@ builds:
       - --tags=kqueue,operator
 
     ldflags:
-      - -s -w -X github.com/minio/console/pkg.ReleaseTag={{.Tag}} -X github.com/minio/console/pkg.CommitID={{.FullCommit}} -X github.com/minio/console/pkg.Version={{.Version}} -X github.com/minio/console/pkg.ShortCommitID={{.ShortCommit}} -X github.com/minio/console/pkg.ReleaseTime={{.Date}}
+      - -s -w -X github.com/foroughfor/console/pkg.ReleaseTag={{.Tag}} -X github.com/foroughfor/console/pkg.CommitID={{.FullCommit}} -X github.com/foroughfor/console/pkg.Version={{.Version}} -X github.com/foroughfor/console/pkg.ShortCommitID={{.ShortCommit}} -X github.com/foroughfor/console/pkg.ReleaseTime={{.Date}}
 
 archives:
   -
@@ -71,7 +71,7 @@ changelog:
 nfpms:
   -
     vendor: MinIO, Inc.
-    homepage: https://github.com/minio/console
+    homepage: https://github.com/foroughfor/console
     maintainer: MinIO Development <dev@min.io>
     description: MinIO Console Server
     license: GNU Affero General Public License v3.0
@@ -85,7 +85,7 @@ nfpms:
 
 dockers:
 - image_templates:
-  - "minio/console:{{ .Tag }}-amd64"
+  - "foroughfor/console:{{ .Tag }}-amd64"
   use: buildx
   goarch: amd64
   dockerfile: Dockerfile.release
@@ -96,7 +96,7 @@ dockers:
   - "--platform=linux/amd64"
   - "--build-arg=TAG={{ .Tag }}"
 - image_templates:
-  - "minio/console:{{ .Tag }}-ppc64le"
+  - "foroughfor/console:{{ .Tag }}-ppc64le"
   use: buildx
   goarch: ppc64le
   dockerfile: Dockerfile.release
@@ -107,7 +107,7 @@ dockers:
   - "--platform=linux/ppc64le"
   - "--build-arg=TAG={{ .Tag }}"
 - image_templates:
-  - "minio/console:{{ .Tag }}-s390x"
+  - "foroughfor/console:{{ .Tag }}-s390x"
   use: buildx
   goarch: s390x
   dockerfile: Dockerfile.release
@@ -118,7 +118,7 @@ dockers:
   - "--platform=linux/s390x"
   - "--build-arg=TAG={{ .Tag }}"
 - image_templates:
-  - "minio/console:{{ .Tag }}-arm64"
+  - "foroughfor/console:{{ .Tag }}-arm64"
   use: buildx
   goarch: arm64
   goos: linux
@@ -130,7 +130,7 @@ dockers:
   - "--platform=linux/arm64"
   - "--build-arg=TAG={{ .Tag }}"
 - image_templates:
-  - "quay.io/minio/console:{{ .Tag }}-amd64"
+  - "quay.io/foroughfor/console:{{ .Tag }}-amd64"
   use: buildx
   goarch: amd64
   dockerfile: Dockerfile.release
@@ -141,7 +141,7 @@ dockers:
   - "--platform=linux/amd64"
   - "--build-arg=TAG={{ .Tag }}"
 - image_templates:
-  - "quay.io/minio/console:{{ .Tag }}-ppc64le"
+  - "quay.io/foroughfor/console:{{ .Tag }}-ppc64le"
   use: buildx
   goarch: ppc64le
   dockerfile: Dockerfile.release
@@ -152,7 +152,7 @@ dockers:
   - "--platform=linux/ppc64le"
   - "--build-arg=TAG={{ .Tag }}"
 - image_templates:
-  - "quay.io/minio/console:{{ .Tag }}-s390x"
+  - "quay.io/foroughfor/console:{{ .Tag }}-s390x"
   use: buildx
   goarch: s390x
   dockerfile: Dockerfile.release
@@ -163,7 +163,7 @@ dockers:
   - "--platform=linux/s390x"
   - "--build-arg=TAG={{ .Tag }}"
 - image_templates:
-  - "quay.io/minio/console:{{ .Tag }}-arm64"
+  - "quay.io/foroughfor/console:{{ .Tag }}-arm64"
   use: buildx
   goarch: arm64
   goos: linux
@@ -175,21 +175,21 @@ dockers:
   - "--platform=linux/arm64"
   - "--build-arg=TAG={{ .Tag }}"
 docker_manifests:
-- name_template: minio/console:{{ .Tag }}
+- name_template: foroughfor/console:{{ .Tag }}
   image_templates:
-  - minio/console:{{ .Tag }}-amd64
-  - minio/console:{{ .Tag }}-arm64
-  - minio/console:{{ .Tag }}-ppc64le
-  - minio/console:{{ .Tag }}-s390x
-- name_template: quay.io/minio/console:{{ .Tag }}
+  - foroughfor/console:{{ .Tag }}-amd64
+  - foroughfor/console:{{ .Tag }}-arm64
+  - foroughfor/console:{{ .Tag }}-ppc64le
+  - foroughfor/console:{{ .Tag }}-s390x
+- name_template: quay.io/foroughfor/console:{{ .Tag }}
   image_templates:
-  - quay.io/minio/console:{{ .Tag }}-amd64
-  - quay.io/minio/console:{{ .Tag }}-arm64
-  - quay.io/minio/console:{{ .Tag }}-ppc64le
-  - quay.io/minio/console:{{ .Tag }}-s390x
-- name_template: minio/console:latest
+  - quay.io/foroughfor/console:{{ .Tag }}-amd64
+  - quay.io/foroughfor/console:{{ .Tag }}-arm64
+  - quay.io/foroughfor/console:{{ .Tag }}-ppc64le
+  - quay.io/foroughfor/console:{{ .Tag }}-s390x
+- name_template: foroughfor/console:latest
   image_templates:
-  - minio/console:{{ .Tag }}-amd64
-  - minio/console:{{ .Tag }}-arm64
-  - minio/console:{{ .Tag }}-ppc64le
-  - minio/console:{{ .Tag }}-s390x
+  - foroughfor/console:{{ .Tag }}-amd64
+  - foroughfor/console:{{ .Tag }}-arm64
+  - foroughfor/console:{{ .Tag }}-ppc64le
+  - foroughfor/console:{{ .Tag }}-s390x
